@@ -5,11 +5,10 @@ import 'package:route_task/products_feature/domain/entities/error.dart';
 import 'package:route_task/products_feature/domain/entities/products_response.dart';
 import 'package:route_task/products_feature/domain/repository/data_sources/products_remote_data_source_contract.dart';
 
-@Injectable(as: ProductsRemoteDataSourceContract)
+@LazySingleton(as: ProductsRemoteDataSourceContract)
 class ProductsRemoteDataSourceImpl implements ProductsRemoteDataSourceContract {
   final ApiManager _apiManager;
 
-  @factoryMethod
   ProductsRemoteDataSourceImpl(this._apiManager);
 
   @override

@@ -21,6 +21,7 @@ class ApiManager {
           ProductsResponseModel.fromJson(jsonDecode(response.body));
 
       if (response.statusCode >= 200 && response.statusCode < 300) {
+        print(response.body);
         return Right(productsResponse);
       } else {
         return Left(ServerError(errorMessage: "Something went wrong"));

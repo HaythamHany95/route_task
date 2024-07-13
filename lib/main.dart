@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:route_task/core/di/get_it.dart';
 import 'package:route_task/core/utils/my_bloc_observer.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:route_task/products_feature/presentation/products_screen.dart';
+import 'package:route_task/products_feature/presentation/screens/products_screen.dart';
 
 void main() {
   runApp(const MyApp());

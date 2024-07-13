@@ -39,10 +39,10 @@ class _HomeAppBarState extends State<HomeAppBar> {
                       ?.copyWith(fontSize: 18.sp),
                   decoration: InputDecoration(
                     hintText: "what do uou search for?",
-                    hintStyle: Theme.of(context)
-                        .textTheme
-                        .titleSmall
-                        ?.copyWith(fontSize: 14.sp),
+                    hintStyle: Theme.of(context).textTheme.titleSmall?.copyWith(
+                        fontSize: 14.sp,
+                        color: Colors.grey,
+                        fontFamily: 'Poppins'),
                     prefixIconConstraints: BoxConstraints(
                       minWidth: 70.w,
                       maxWidth: 100.w,

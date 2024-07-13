@@ -10,6 +10,7 @@ environment:
 
 dependencies:
   cupertino_icons: ^1.0.6
+  cached_network_image: ^3.2.3
 # Responsive UI
   flutter_screenutil: ^5.9.3 
 # Networking
